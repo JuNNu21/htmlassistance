@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greet(){
+            var username = document.getElementById(myid).innerHTML;
+            username.innerHTML = "have a great day"+username
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="username">
+    <input type="button" onclick="greet()" value="click here"> 
+    <div id="myid" style="background-color: brown;"></div>
+    
+</body>
+</html>
