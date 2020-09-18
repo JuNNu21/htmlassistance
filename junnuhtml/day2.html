@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    p{
+        background-color: greenyellow;
+    }
+    h1{
+        background-color: hotpink;
+    }
+    h2{
+        background-color: lightcoral;
+    }
+    h1,h2,p{
+        letter-spacing: 4px;
+    }
+    .check{
+        background-color: orchid;
+        text-transform: uppercase;
+        text-decoration: orange;
+    }
+    #header{
+        text-decoration: underline;
+    }
+    a:link{
+        color:steelblue;
+    }
+    a:visited{
+        color: yellowgreen;
+    }
+    a:active{
+        color:fuchsia;
+    }
+    a:hover{
+        text-transform: uppercase;
+        color:orange;
+        font-style: italic;
+    }
+    ul#cartoon li:first-child{
+        text-transform: uppercase;
+        color: greenyellow;
+    }
+    ul li:first-child{
+        color:red;
+    }
+    ol li{
+        color:blue;
+    }
+    li#course{
+        letter-spacing:  2px;;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="check" >Inside p with class</p>
+	<p> Inside P without class </p>
+	
+	<div class="check">Inside a DIV with class</div>
+	<div>Inside a div tag without class</div>
+	
+	<h1 class="check">Inside H1 with class</h1>
+	<h1 id="header"> Inside H1 without class </p>
+	
+	<h2 class="check">Inside H2 with class</h2>
+    <h2>  Inside H2 without class </h2>
+    </div>
+    <a href="www.google.com">Search here no ads</a>
+    <ul style="list-style-type: square;">
+		<li>Mango</li>
+		<li>Apple</li>
+		<li>Orange</li>
+	</ul>
+
+	<ol style="list-style-type: upper-alpha;">
+		<li id="course">Java</li>
+		<li>Html</li>
+		<li>CSS</li>
+	</ol>
+
+	<ul style="list-style-type: none;" id="cartoon">
+		<li>Tom</li>
+		<li>Mickey</li>
+		<li >Donald</li>
+	</ul>
+</body>
+</html>
