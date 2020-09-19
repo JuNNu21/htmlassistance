@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    p{
+        background-color: cyan;
+        text-decoration: underline;
+        text-decoration-color: tomato;
+    }
+</style>
+<h3>Enter your comments </h3>
+<input type="text" id="fname" onkeyup="myFunction()">
+<p id="demotext"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname").value;
+  document.getElementById('demotext').innerHTML=  x;
+
+}
+</script>
+
+</body>
+</html>

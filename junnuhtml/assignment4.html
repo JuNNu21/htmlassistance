@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    //document.getElementById("demo").innerHTML = "You selected: " + x;
+    if(x==0)
+    {
+        document.getElementById("demo").innerHTML = 
+        " <h1>TV Show Room</h1><ul><li> Sony </li><li> Mi </li></ul>";
+    }
+    else if(x==1)
+    {
+        document.getElementById("demo").innerHTML = 
+        " <h1>Car Show Room</h1><ul><li> Skoda </li><li> Honda </li></ul>";
+    }
+    else if(x==2)
+    {
+        document.getElementById("demo").innerHTML = 
+        " <h1>Bike Show Room</h1><ul><li> Honda </li><li> Hero </li></ul>";
+    }
+}
+
+    </script>
+</head>
+<body>
+    <select id="mySelect" onchange="myFunction()">
+        <option >--select--
+        <option value="0">Tv
+        </option>
+        <option value="1">Car
+        <option value="2">Bike
+      </select>
+      
+      <p>Details:</p>
+      
+      <p id="demo"></p>
+</body>
+</html>
