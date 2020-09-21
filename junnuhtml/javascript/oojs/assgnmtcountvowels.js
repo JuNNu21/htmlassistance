@@ -1,6 +1,3 @@
-//let str= 'averylongword'
-//var vowelscount=0;
-
 
 function vowel_count(str) 
 {

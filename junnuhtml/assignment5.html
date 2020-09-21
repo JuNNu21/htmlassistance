@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        function validateform(){  
+            var name=document.myform.name.value;  
+            var password=document.myform.password.value;  
+            
+            if (name==null || name==""){  
+                alert("Name can't be blank"); 
+                name.focus() ; 
+                return false;  
+            }
+            else if(password.length<6){  
+                alert("Password must be at least 6 characters long.");  
+                password.focus() ; 
+                return false;  
+            }  
+            else if(age.value<18 || age.value>22){
+                alert("You are not eligible as per age requirements");
+                age.focus();
+                return false;
+            }
+            else{
+                return true;
+            }
+        }  
+        
+    </script>  
+
+    <body> 
+        
+        <h3>Registration Form</h3>
+        <form name="myform" action="sucess.html" onsubmit="return validateform()" >  
+            Name: <input type="text" name="name"><br/>  
+            Password: <input type="password" name="password"><br/>
+            Age: <input type="number" name="age"><br/>
+            <input type="submit" value="register">  
+        </form> 
+    </body>
+</html>
